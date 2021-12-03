@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		#loading, #result{
+			display: none;
+		}
+	</style>
+</head>
+
+<body class="bg-dark">
+	<main class="container mt-5 ">
+		<div class="card mx-auto w-50  p-2">
+			<div class="heading">
+				<h4 class="display-5 text-center">Loan Calculator</h4>
+			</div>
+
+			<form action="" id="form-calc">
+				<div class="form-group">
+					<div class="input-group py-2">
+						<span class="bg-secondary px-3 p-2">$</span>
+						<input type="number" class="form-control" id="amount" placeholder="Enter Amount">
+					</div>
+					<div class="input-group py-2">
+						<span class="bg-secondary px-3 p-2">%</span>
+						<input type="number" class="form-control" id="interest" placeholder="Interest">
+					</div>
+					<div class="input-group py-2">
+						<input type="number" class="form-control" id="years" placeholder="Years">
+					</div>
+					<button type="submit" class="p-2 btn btn-dark w-100">Calculate</button>
+				</div>
+			</form>
+
+			<div class=" mx-auto text-center" id="loading">
+				<img src="img/loading.gif" alt="" id="">
+			</div>
+			<div id="result">
+				<div class="input-group py-2">
+					<span class="bg-secondary px-3 p-2">Monthly Payment</span>
+					<input type="number" class="form-control" id="monthly-calc" disabled>
+				</div>
+				<div class="input-group py-2">
+					<span class="bg-secondary px-3 p-2">Total Payment</span>
+					<input type="number" class="form-control" id="amount-calc" disabled>
+				</div>
+				<div class="input-group py-2">
+					<span class="bg-secondary px-3 p-2">Total Interest</span>
+					<input type="number" class="form-control" id="interest-calc" disabled>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<link rel="stylesheet" href="bootstrap-5/css/bootstrap.min.css">
+	<script src="bootstrap-5/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
